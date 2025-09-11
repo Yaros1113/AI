@@ -181,4 +181,6 @@ cython_debug/
 .cursorindexingignore
 
 
-data/
+data/models/
+data/input/raw
+data/input/labels
