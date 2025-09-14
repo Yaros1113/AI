@@ -181,6 +181,11 @@ cython_debug/
 .cursorindexingignore
 
 
-data/models/
 data/input/raw
 data/input/labels
+data/input/positive
+/data/input/images
+/data/input/z_or
+/data/models/yolo11m_tbank_finetuned
+/data/models/yolo11m_tbank_finetuned6
+data/models/yolo11m_tbank_best.pt

@@ -3,10 +3,10 @@ echo Installation has started...
 echo.
 
 :: Проверяем, существует ли уже папка env
-if exist "src\env\" (
+if exist "env\" (
     echo Virtual environment 'env' already exists.
     echo Activating existing virtual environment...
-    call src\env\Scripts\activate.bat
+    call env\Scripts\activate.bat
     echo Existing virtual environment activated!
     echo.
     goto :skip_installation
@@ -76,6 +76,7 @@ if not exist "requirements.txt" (
 )
 
 :: Устанавливаем зависимости
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
 pip install -r requirements.txt
 
 if %errorlevel% neq 0 (

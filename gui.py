@@ -8,23 +8,29 @@ class App(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title("T-Bank Logo Detection Control Panel")
-        self.geometry("700x500")
+        self.geometry("950x500")
 
         # Кнопки
         btn_frame = tk.Frame(self)
         btn_frame.pack(pady=10)
 
-        self.btn_labeling = tk.Button(btn_frame, text="Разметка данных", width=20, command=self.run_labeling)
+        self.btn_labeling = tk.Button(btn_frame, text="Дообучение модели", width=20, command=self.run_fine_tune)
         self.btn_labeling.grid(row=0, column=0, padx=5)
 
+        self.btn_labeling = tk.Button(btn_frame, text="Разметка данных", width=20, command=self.run_labeling)
+        self.btn_labeling.grid(row=0, column=1, padx=5)
+
+        self.btn_visualize = tk.Button(btn_frame, text="Визуализация BB", width=20, command=self.visualize_positive)
+        self.btn_visualize.grid(row=0, column=2, padx=5)
+
         self.btn_training = tk.Button(btn_frame, text="Обучение модели", width=20, command=self.run_training)
-        self.btn_training.grid(row=0, column=1, padx=5)
+        self.btn_training.grid(row=0, column=3, padx=5)
 
         self.btn_ml_service = tk.Button(btn_frame, text="Запуск ML-сервиса", width=20, command=self.run_ml_service)
-        self.btn_ml_service.grid(row=0, column=2, padx=5)
+        self.btn_ml_service.grid(row=0, column=4, padx=5)
 
         self.btn_validation = tk.Button(btn_frame, text="Валидация модели", width=20, command=self.run_validation)
-        self.btn_validation.grid(row=0, column=3, padx=5)
+        self.btn_validation.grid(row=0, column=5, padx=5)
 
         # Текстовое поле для логов
         self.log_area = scrolledtext.ScrolledText(self, height=25, state='disabled')
@@ -49,6 +55,7 @@ class App(tk.Tk):
                 stdout=subprocess.PIPE,
                 stderr=subprocess.STDOUT,
                 universal_newlines=True,
+                encoding='cp866',
                 shell=True
             )
             for line in process.stdout:
@@ -61,15 +68,23 @@ class App(tk.Tk):
                 messagebox.showerror("Ошибка", f"{description} завершилось с ошибкой.")
         except Exception as e:
             self.log(f"Исключение: {e}")
-            messagebox.showerror("Ошибка", str(e))
+            messagebox.showerror(f"Ошибка в \"{description}\"", str(e))
 
     # Обработчики кнопок (запуск в потоках) ??? Добавить сборку докера
+    def run_fine_tune(self):
+        # Запуск скрипта дообучения
+        self.run_in_thread(lambda: self.run_command("python scripts/fine_tune_yolo.py", "Дообучение модели"))
+    
     def run_labeling(self):
-        # Пример запуска скрипта разметки
+        # Запуск скрипта разметки
         self.run_in_thread(lambda: self.run_command("python scripts/prepare_dataset.py", "Разметка данных"))
+    
+    def visualize_positive(self):
+        # Запуск скрипта визуализации разметки позитивных вариантов
+        self.run_in_thread(lambda: self.run_command("python scripts/visualize_positive.py", "Визуализация BB"))
 
     def run_training(self):
-        # Пример запуска обучения модели
+        # Запуск обучения модели
         self.run_in_thread(lambda: self.run_command("python scripts/train.py", "Обучение модели"))
 
     def run_ml_service(self):

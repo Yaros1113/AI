@@ -18,6 +18,8 @@ COPY requirements.txt .
 
 # Устанавливаем Python зависимости
 RUN pip install --upgrade pip
+# RUN pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+RUN pip install torch torchvision --index-url https://download.pytorch.org/whl/cu129
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Копируем весь проект

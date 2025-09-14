@@ -1,11 +1,7 @@
-# Labeling
-torch>=1.9.0
-torchvision>=0.10.0
 # Core
 fastapi==0.115.6
 pydantic==2.10.1
 uvicorn==0.31.1
-# torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ultralytics==8.3.28
 transformers==4.46.2
 opencv-python==4.10.0.84
