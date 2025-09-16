@@ -62,34 +62,35 @@ def fine_tune_yolo():
     model_save_dir = 'data/models'
 
     # 1. Подготовка структуры датасета
-    prepare_dataset_structure(raw_data_dir, prepared_data_dir)
+    #prepare_dataset_structure(raw_data_dir, prepared_data_dir)
 
     # 2. Загружаем предобученную модель YOLO
     # Рекомендуется использовать 'yolo11m.pt' как баланс скорости и точности
-    model = YOLO('data/models/yolo11m_tbank_finetuned6/weights/best.pt')
+    '''model = YOLO('data/models/yolo11m_tbank_best.pt')
 
     # 3. Запускаем обучение (fine-tuning)
     results = model.train(
         data=dataset_config_path,   # Путь к YAML-конфигу
-        epochs=50,                  # Количество эпох
+        epochs=60,                  # Количество эпох
         imgsz=640,                  # Размер изображения
+        multi_scale=True,           # Обучает модель на изображениях с разным разрешением (+- 50%)
         batch=16,                   # Размер батча (зависит от памяти GPU)
         patience=15,                # Ранняя остановка, если нет улучшений
         project=model_save_dir,     # Куда сохранять результаты
-        name='yolo11m_tbank_finetuned', # Имя эксперимента
-        optimizer='AdamW',          # Оптимизатор
+        name='yolo11m_tbank_finetuned_2', # Имя эксперимента
+        #optimizer='AdamW',           # Оптимизатор (по умолчанию автоподбор)
         lr0=0.001,                  # Начальная скорость обучения
-        # cos_lr=True,              # Использовать косинусный расписание LR (опционально)
-        # weight_decay=0.0005,      # L2 регуляризация (опционально)
-        # augment=True,             # Аугментация данных (включена по умолчанию)
-        # freeze=10,                 # Заморозить первые 10 слоев (опционально, для экономии памяти и ускорения, если датасет маленький)
+        cos_lr=True,                # Использовать косинусный расписание LR (опционально)
+        weight_decay=0.0005,        # L2 регуляризация (штрафует за слишком большие веса)
+        augment=True,               # Аугментация данных (поворачивает, масштабирует и контрастирует входные данные)
+        freeze=5,                   # Заморозить первые 10 слоев (опционально, для экономии памяти и ускорения, если датасет маленький)
         device='0',                 # Использовать GPU с ID 0
         verbose=True                # Выводить подробный прогресс
-    )
+    )'''
 
     # 4. Оцениваем модель на валидационном наборе
     #best_model_path = results.best
-    best_model = YOLO("data/models/yolo11m_tbank_best.pt")#best_model_path)
+    best_model = YOLO('data/models/yolo11m_tbank_best.pt')#best_model_path)
     metrics = best_model.val(
         device='0',
     )  # Этот метод вернет объект с метриками

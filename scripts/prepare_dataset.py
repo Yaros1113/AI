@@ -120,7 +120,7 @@ names: ['tbank_logo']
 
 def main():
     # Путь к обученной модели
-    model_path = 'data/models/yolo11m_tbank_finetuned6/weights/best.pt'
+    model_path = 'data/models/yolo11m_tbank_best.pt'
     
     labeler = ZeroShotLabeling(model_path)
     

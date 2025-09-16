@@ -1,329 +1,98 @@
 [
   {
-    "image": "images (4).jpg",
+    "image": "ff18480e326206729f6f19a1ca97afd7.jpg",
     "status": 200,
-    "response_time_ms": 1271.6522216796875,
-    "detections_count": 2,
-    "detections": [
-      {
-        "bbox": {
-          "x_min": 72,
-          "y_min": 91,
-          "x_max": 163,
-          "y_max": 180
-        }
-      },
-      {
-        "bbox": {
-          "x_min": 290,
-          "y_min": 199,
-          "x_max": 338,
-          "y_max": 253
-        }
-      }
-    ],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images.png",
-    "status": 200,
-    "response_time_ms": 1139.730453491211,
+    "response_time_ms": 2194.084405899048,
     "detections_count": 0,
     "detections": [],
-    "success": true,
-    "content_type": "image/png"
-  },
-  {
-    "image": "images (37).jpg",
-    "status": 200,
-    "response_time_ms": 1183.7449073791504,
-    "detections_count": 0,
-    "detections": [],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images (47).jpg",
-    "status": 200,
-    "response_time_ms": 71.17915153503418,
-    "detections_count": 0,
-    "detections": [],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images (40).jpg",
-    "status": 200,
-    "response_time_ms": 32.70769119262695,
-    "detections_count": 0,
-    "detections": [],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images (40).jpg",
-    "status": 200,
-    "response_time_ms": 19.146442413330078,
-    "detections_count": 0,
-    "detections": [],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images (46).jpg",
-    "status": 200,
-    "response_time_ms": 156.89420700073242,
-    "detections_count": 1,
-    "detections": [
-      {
-        "bbox": {
-          "x_min": 533,
-          "y_min": 148,
-          "x_max": 565,
-          "y_max": 183
-        }
-      }
-    ],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images (35).jpg",
-    "status": 200,
-    "response_time_ms": 115.76175689697266,
-    "detections_count": 1,
-    "detections": [
-      {
-        "bbox": {
-          "x_min": 251,
-          "y_min": 183,
-          "x_max": 318,
-          "y_max": 264
-        }
-      }
-    ],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images (23).jpg",
-    "status": 200,
-    "response_time_ms": 71.51937484741211,
-    "detections_count": 1,
-    "detections": [
-      {
-        "bbox": {
-          "x_min": 129,
-          "y_min": 43,
-          "x_max": 250,
-          "y_max": 118
-        }
-      }
-    ],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images.png",
-    "status": 200,
-    "response_time_ms": 52.51359939575195,
-    "detections_count": 0,
-    "detections": [],
-    "success": true,
-    "content_type": "image/png"
-  },
-  {
-    "image": "images (44).jpg",
-    "status": 200,
-    "response_time_ms": 30.69615364074707,
-    "detections_count": 3,
-    "detections": [
-      {
-        "bbox": {
-          "x_min": 182,
-          "y_min": 102,
-          "x_max": 459,
-          "y_max": 310
-        }
-      },
-      {
-        "bbox": {
-          "x_min": 204,
-          "y_min": 142,
-          "x_max": 435,
-          "y_max": 312
-        }
-      },
-      {
-        "bbox": {
-          "x_min": 235,
-          "y_min": 73,
-          "x_max": 437,
-          "y_max": 306
-        }
-      }
-    ],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images (23).jpg",
-    "status": 200,
-    "response_time_ms": 16.315698623657227,
-    "detections_count": 1,
-    "detections": [
-      {
-        "bbox": {
-          "x_min": 129,
-          "y_min": 43,
-          "x_max": 250,
-          "y_max": 118
-        }
-      }
-    ],
     "success": true,
     "content_type": "image/jpeg"
   },
   {
     "image": "images (17).jpg",
     "status": 200,
-    "response_time_ms": 118.90172958374023,
-    "detections_count": 1,
-    "detections": [
-      {
-        "bbox": {
-          "x_min": 474,
-          "y_min": 65,
-          "x_max": 568,
-          "y_max": 158
-        }
-      }
-    ],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images (18).jpg",
-    "status": 200,
-    "response_time_ms": 72.16787338256836,
+    "response_time_ms": 2268.7625885009766,
     "detections_count": 0,
     "detections": [],
     "success": true,
     "content_type": "image/jpeg"
   },
   {
-    "image": "images (50).jpg",
+    "image": "t-bank.jpg",
     "status": 200,
-    "response_time_ms": 39.37649726867676,
+    "response_time_ms": 2098.69647026062,
     "detections_count": 1,
     "detections": [
       {
         "bbox": {
-          "x_min": 240,
-          "y_min": 140,
-          "x_max": 316,
-          "y_max": 212
+          "x_min": 74,
+          "y_min": 373,
+          "x_max": 110,
+          "y_max": 408
         }
       }
     ],
     "success": true,
     "content_type": "image/jpeg"
+  },
+  {
+    "image": "images (5).jpg",
+    "status": 200,
+    "response_time_ms": 118.33882331848145,
+    "detections_count": 1,
+    "detections": [
+      {
+        "bbox": {
+          "x_min": 199,
+          "y_min": 429,
+          "x_max": 219,
+          "y_max": 460
+        }
+      }
+    ],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "fe6958a8fff650ec11877c99c85b17ff.jpg",
+    "status": 200,
+    "response_time_ms": 68.35722923278809,
+    "detections_count": 0,
+    "detections": [],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "200.png",
+    "status": 200,
+    "response_time_ms": 161.3776683807373,
+    "detections_count": 0,
+    "detections": [],
+    "success": true,
+    "content_type": "image/png"
   },
   {
     "image": "images (12).jpg",
     "status": 200,
-    "response_time_ms": 163.8164520263672,
+    "response_time_ms": 95.26610374450684,
     "detections_count": 0,
     "detections": [],
     "success": true,
     "content_type": "image/jpeg"
   },
   {
-    "image": "images (42).jpg",
+    "image": "Tinkoff_ID_\u043d\u0430_Wildberries.png",
     "status": 200,
-    "response_time_ms": 119.63939666748047,
+    "response_time_ms": 58.225393295288086,
     "detections_count": 0,
     "detections": [],
     "success": true,
-    "content_type": "image/jpeg"
+    "content_type": "image/png"
   },
   {
-    "image": "images (7).jpg",
+    "image": "ff6196c6fa303b361c8bdb46af9357e2.jpg",
     "status": 200,
-    "response_time_ms": 70.6028938293457,
-    "detections_count": 1,
-    "detections": [
-      {
-        "bbox": {
-          "x_min": 159,
-          "y_min": 247,
-          "x_max": 226,
-          "y_max": 314
-        }
-      }
-    ],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images (9).jpg",
-    "status": 200,
-    "response_time_ms": 41.382551193237305,
-    "detections_count": 0,
-    "detections": [],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images (45).jpg",
-    "status": 200,
-    "response_time_ms": 60.96601486206055,
-    "detections_count": 0,
-    "detections": [],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images (9).jpg",
-    "status": 200,
-    "response_time_ms": 21.289587020874023,
-    "detections_count": 0,
-    "detections": [],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images (31).jpg",
-    "status": 200,
-    "response_time_ms": 105.59344291687012,
-    "detections_count": 1,
-    "detections": [
-      {
-        "bbox": {
-          "x_min": 234,
-          "y_min": 102,
-          "x_max": 251,
-          "y_max": 121
-        }
-      }
-    ],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images (24).jpg",
-    "status": 200,
-    "response_time_ms": 63.16709518432617,
-    "detections_count": 0,
-    "detections": [],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images (22).jpg",
-    "status": 200,
-    "response_time_ms": 32.76395797729492,
+    "response_time_ms": 138.83042335510254,
     "detections_count": 0,
     "detections": [],
     "success": true,
@@ -332,42 +101,33 @@
   {
     "image": "images (10).jpg",
     "status": 200,
-    "response_time_ms": 27.881622314453125,
+    "response_time_ms": 49.8046875,
     "detections_count": 0,
     "detections": [],
     "success": true,
     "content_type": "image/jpeg"
   },
   {
-    "image": "images (25).jpg",
+    "image": "ff627684cb59b7f966ef981bc94ddaf8.jpg",
     "status": 200,
-    "response_time_ms": 69.53167915344238,
+    "response_time_ms": 85.25753021240234,
     "detections_count": 0,
     "detections": [],
     "success": true,
     "content_type": "image/jpeg"
   },
   {
-    "image": "images (15).jpg",
+    "image": "fe63ba3f1053e2ce91ec12f436396f60.jpg",
     "status": 200,
-    "response_time_ms": 46.952009201049805,
-    "detections_count": 0,
-    "detections": [],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images (17).jpg",
-    "status": 200,
-    "response_time_ms": 41.00966453552246,
+    "response_time_ms": 159.56830978393555,
     "detections_count": 1,
     "detections": [
       {
         "bbox": {
-          "x_min": 474,
-          "y_min": 65,
-          "x_max": 568,
-          "y_max": 158
+          "x_min": 289,
+          "y_min": 219,
+          "x_max": 349,
+          "y_max": 278
         }
       }
     ],
@@ -375,116 +135,17 @@
     "content_type": "image/jpeg"
   },
   {
-    "image": "images (48).jpg",
+    "image": "ff9a12dc4679070bf0d970674cb73c90.jpg",
     "status": 200,
-    "response_time_ms": 79.97655868530273,
-    "detections_count": 0,
-    "detections": [],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images (26).jpg",
-    "status": 200,
-    "response_time_ms": 118.10517311096191,
-    "detections_count": 0,
-    "detections": [],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images (33).jpg",
-    "status": 200,
-    "response_time_ms": 81.44116401672363,
-    "detections_count": 0,
-    "detections": [],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images (8).jpg",
-    "status": 200,
-    "response_time_ms": 40.2829647064209,
-    "detections_count": 0,
-    "detections": [],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images (41).jpg",
-    "status": 200,
-    "response_time_ms": 142.50946044921875,
-    "detections_count": 0,
-    "detections": [],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images (38).jpg",
-    "status": 200,
-    "response_time_ms": 45.93992233276367,
-    "detections_count": 0,
-    "detections": [],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images (19).jpg",
-    "status": 200,
-    "response_time_ms": 77.41904258728027,
-    "detections_count": 0,
-    "detections": [],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images (32).jpg",
-    "status": 200,
-    "response_time_ms": 117.77019500732422,
-    "detections_count": 0,
-    "detections": [],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images (41).jpg",
-    "status": 200,
-    "response_time_ms": 33.47516059875488,
-    "detections_count": 0,
-    "detections": [],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images (12).jpg",
-    "status": 200,
-    "response_time_ms": 54.3520450592041,
-    "detections_count": 0,
-    "detections": [],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images (43).jpg",
-    "status": 200,
-    "response_time_ms": 92.19741821289062,
-    "detections_count": 0,
-    "detections": [],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images (2).jpg",
-    "status": 200,
-    "response_time_ms": 76.40242576599121,
+    "response_time_ms": 110.39400100708008,
     "detections_count": 1,
     "detections": [
       {
         "bbox": {
-          "x_min": 221,
-          "y_min": 96,
-          "x_max": 415,
-          "y_max": 279
+          "x_min": 13,
+          "y_min": 0,
+          "x_max": 72,
+          "y_max": 53
         }
       }
     ],
@@ -492,35 +153,78 @@
     "content_type": "image/jpeg"
   },
   {
-    "image": "images (2).png",
+    "image": "fe460e864ac81c9ae0d780047d216c84.jpg",
     "status": 200,
-    "response_time_ms": 55.24849891662598,
+    "response_time_ms": 54.76498603820801,
+    "detections_count": 2,
+    "detections": [
+      {
+        "bbox": {
+          "x_min": 166,
+          "y_min": 260,
+          "x_max": 272,
+          "y_max": 365
+        }
+      },
+      {
+        "bbox": {
+          "x_min": 21,
+          "y_min": 74,
+          "x_max": 128,
+          "y_max": 181
+        }
+      }
+    ],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "images.png",
+    "status": 200,
+    "response_time_ms": 142.51255989074707,
     "detections_count": 0,
     "detections": [],
     "success": true,
     "content_type": "image/png"
   },
   {
-    "image": "images (45).jpg",
+    "image": "images (13).jpg",
     "status": 200,
-    "response_time_ms": 23.171186447143555,
-    "detections_count": 0,
-    "detections": [],
+    "response_time_ms": 120.29218673706055,
+    "detections_count": 2,
+    "detections": [
+      {
+        "bbox": {
+          "x_min": 348,
+          "y_min": 102,
+          "x_max": 400,
+          "y_max": 139
+        }
+      },
+      {
+        "bbox": {
+          "x_min": 501,
+          "y_min": 74,
+          "x_max": 564,
+          "y_max": 133
+        }
+      }
+    ],
     "success": true,
     "content_type": "image/jpeg"
   },
   {
-    "image": "images (16).jpg",
+    "image": "ff19891c6735d98f7c63f0695afcee61.jpg",
     "status": 200,
-    "response_time_ms": 73.49443435668945,
+    "response_time_ms": 87.14413642883301,
     "detections_count": 1,
     "detections": [
       {
         "bbox": {
-          "x_min": 40,
-          "y_min": 41,
-          "x_max": 97,
-          "y_max": 100
+          "x_min": 6,
+          "y_min": 25,
+          "x_max": 75,
+          "y_max": 96
         }
       }
     ],
@@ -528,61 +232,9 @@
     "content_type": "image/jpeg"
   },
   {
-    "image": "images (8).jpg",
+    "image": "images (9).jpg",
     "status": 200,
-    "response_time_ms": 25.994539260864258,
-    "detections_count": 0,
-    "detections": [],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images (39).jpg",
-    "status": 200,
-    "response_time_ms": 92.37909317016602,
-    "detections_count": 0,
-    "detections": [],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images (44).jpg",
-    "status": 200,
-    "response_time_ms": 96.66967391967773,
-    "detections_count": 3,
-    "detections": [
-      {
-        "bbox": {
-          "x_min": 182,
-          "y_min": 102,
-          "x_max": 459,
-          "y_max": 310
-        }
-      },
-      {
-        "bbox": {
-          "x_min": 204,
-          "y_min": 142,
-          "x_max": 435,
-          "y_max": 312
-        }
-      },
-      {
-        "bbox": {
-          "x_min": 235,
-          "y_min": 73,
-          "x_max": 437,
-          "y_max": 306
-        }
-      }
-    ],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images (11).jpg",
-    "status": 200,
-    "response_time_ms": 163.45500946044922,
+    "response_time_ms": 45.377254486083984,
     "detections_count": 0,
     "detections": [],
     "success": true,
@@ -591,49 +243,15 @@
   {
     "image": "images (6).jpg",
     "status": 200,
-    "response_time_ms": 53.972482681274414,
-    "detections_count": 3,
-    "detections": [
-      {
-        "bbox": {
-          "x_min": 199,
-          "y_min": 56,
-          "x_max": 275,
-          "y_max": 132
-        }
-      },
-      {
-        "bbox": {
-          "x_min": 198,
-          "y_min": 181,
-          "x_max": 274,
-          "y_max": 253
-        }
-      },
-      {
-        "bbox": {
-          "x_min": 200,
-          "y_min": 328,
-          "x_max": 273,
-          "y_max": 401
-        }
-      }
-    ],
-    "success": true,
-    "content_type": "image/jpeg"
-  },
-  {
-    "image": "images (16).jpg",
-    "status": 200,
-    "response_time_ms": 80.50680160522461,
+    "response_time_ms": 130.36155700683594,
     "detections_count": 1,
     "detections": [
       {
         "bbox": {
-          "x_min": 40,
-          "y_min": 41,
-          "x_max": 97,
-          "y_max": 100
+          "x_min": 453,
+          "y_min": 36,
+          "x_max": 486,
+          "y_max": 69
         }
       }
     ],
@@ -641,9 +259,423 @@
     "content_type": "image/jpeg"
   },
   {
-    "image": "images (21).jpg",
+    "image": "images (2).jpg",
     "status": 200,
-    "response_time_ms": 123.00372123718262,
+    "response_time_ms": 37.3682975769043,
+    "detections_count": 0,
+    "detections": [],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "25b51deeb7f56ee9dc6d3e219c2cddd6.jpg",
+    "status": 200,
+    "response_time_ms": 95.92151641845703,
+    "detections_count": 1,
+    "detections": [
+      {
+        "bbox": {
+          "x_min": 82,
+          "y_min": 252,
+          "x_max": 229,
+          "y_max": 393
+        }
+      }
+    ],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "images (12).jpg",
+    "status": 200,
+    "response_time_ms": 140.96927642822266,
+    "detections_count": 0,
+    "detections": [],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "ff35433c2554e9a61c3e9163f4769f14.jpg",
+    "status": 200,
+    "response_time_ms": 52.37627029418945,
+    "detections_count": 1,
+    "detections": [
+      {
+        "bbox": {
+          "x_min": 47,
+          "y_min": 37,
+          "x_max": 100,
+          "y_max": 90
+        }
+      }
+    ],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "ff3fe22027295cd9c13eb6543ecb138d.jpg",
+    "status": 200,
+    "response_time_ms": 104.31504249572754,
+    "detections_count": 1,
+    "detections": [
+      {
+        "bbox": {
+          "x_min": 0,
+          "y_min": 45,
+          "x_max": 20,
+          "y_max": 105
+        }
+      }
+    ],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "ff6b428f0cb346817a71cb5501c0846f.jpg",
+    "status": 200,
+    "response_time_ms": 92.4384593963623,
+    "detections_count": 1,
+    "detections": [
+      {
+        "bbox": {
+          "x_min": 0,
+          "y_min": 0,
+          "x_max": 56,
+          "y_max": 42
+        }
+      }
+    ],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "ff71628e8a3763e8b600dafee3dc27ea.jpg",
+    "status": 200,
+    "response_time_ms": 145.73383331298828,
+    "detections_count": 0,
+    "detections": [],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "fe7517aab029024e35b20f9e3d38fa2d.jpg",
+    "status": 200,
+    "response_time_ms": 44.31772232055664,
+    "detections_count": 0,
+    "detections": [],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "images (19).jpg",
+    "status": 200,
+    "response_time_ms": 35.715341567993164,
+    "detections_count": 1,
+    "detections": [
+      {
+        "bbox": {
+          "x_min": 293,
+          "y_min": 135,
+          "x_max": 346,
+          "y_max": 188
+        }
+      }
+    ],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "ff9a12dc4679070bf0d970674cb73c90.jpg",
+    "status": 200,
+    "response_time_ms": 139.07599449157715,
+    "detections_count": 1,
+    "detections": [
+      {
+        "bbox": {
+          "x_min": 13,
+          "y_min": 0,
+          "x_max": 72,
+          "y_max": 53
+        }
+      }
+    ],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "ff820394f944976e1eb10325f98edbc7.jpg",
+    "status": 200,
+    "response_time_ms": 77.29840278625488,
+    "detections_count": 0,
+    "detections": [],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "ff4952efd64feeeaf3e3ae61c9687755.jpg",
+    "status": 200,
+    "response_time_ms": 138.9772891998291,
+    "detections_count": 1,
+    "detections": [
+      {
+        "bbox": {
+          "x_min": 31,
+          "y_min": 5,
+          "x_max": 71,
+          "y_max": 46
+        }
+      }
+    ],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "ff35315bd6ce8dd7846f599cc740a3c7.jpg",
+    "status": 200,
+    "response_time_ms": 80.02758026123047,
+    "detections_count": 0,
+    "detections": [],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "images.png",
+    "status": 200,
+    "response_time_ms": 34.34610366821289,
+    "detections_count": 0,
+    "detections": [],
+    "success": true,
+    "content_type": "image/png"
+  },
+  {
+    "image": "images (18).jpg",
+    "status": 200,
+    "response_time_ms": 154.14834022521973,
+    "detections_count": 1,
+    "detections": [
+      {
+        "bbox": {
+          "x_min": 298,
+          "y_min": 62,
+          "x_max": 333,
+          "y_max": 96
+        }
+      }
+    ],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "ff31e49bd4cf7ae190dc9c9bef59208c.jpg",
+    "status": 200,
+    "response_time_ms": 107.5124740600586,
+    "detections_count": 0,
+    "detections": [],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "images (14).jpg",
+    "status": 200,
+    "response_time_ms": 40.882110595703125,
+    "detections_count": 0,
+    "detections": [],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "images (5).jpg",
+    "status": 200,
+    "response_time_ms": 45.5784797668457,
+    "detections_count": 1,
+    "detections": [
+      {
+        "bbox": {
+          "x_min": 199,
+          "y_min": 429,
+          "x_max": 219,
+          "y_max": 460
+        }
+      }
+    ],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "ff6236b46eaef6ec0793257b1e96da4e.jpg",
+    "status": 200,
+    "response_time_ms": 150.75016021728516,
+    "detections_count": 0,
+    "detections": [],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "fe63ba3f1053e2ce91ec12f436396f60.jpg",
+    "status": 200,
+    "response_time_ms": 116.0883903503418,
+    "detections_count": 1,
+    "detections": [
+      {
+        "bbox": {
+          "x_min": 289,
+          "y_min": 219,
+          "x_max": 349,
+          "y_max": 278
+        }
+      }
+    ],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "ff627684cb59b7f966ef981bc94ddaf8.jpg",
+    "status": 200,
+    "response_time_ms": 38.61641883850098,
+    "detections_count": 0,
+    "detections": [],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "images.jpg",
+    "status": 200,
+    "response_time_ms": 72.60322570800781,
+    "detections_count": 1,
+    "detections": [
+      {
+        "bbox": {
+          "x_min": 398,
+          "y_min": 207,
+          "x_max": 451,
+          "y_max": 257
+        }
+      }
+    ],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "ff05d783e6c6e361a180f95cc29cd049.jpg",
+    "status": 200,
+    "response_time_ms": 95.63183784484863,
+    "detections_count": 1,
+    "detections": [
+      {
+        "bbox": {
+          "x_min": 271,
+          "y_min": 1,
+          "x_max": 349,
+          "y_max": 55
+        }
+      }
+    ],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "images (4).jpg",
+    "status": 200,
+    "response_time_ms": 124.3584156036377,
+    "detections_count": 1,
+    "detections": [
+      {
+        "bbox": {
+          "x_min": 385,
+          "y_min": 270,
+          "x_max": 482,
+          "y_max": 374
+        }
+      }
+    ],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "images.jpg",
+    "status": 200,
+    "response_time_ms": 37.52493858337402,
+    "detections_count": 1,
+    "detections": [
+      {
+        "bbox": {
+          "x_min": 398,
+          "y_min": 207,
+          "x_max": 451,
+          "y_max": 257
+        }
+      }
+    ],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "ff769947db2a0e1a18d0c3625de23ce2.jpg",
+    "status": 200,
+    "response_time_ms": 86.08317375183105,
+    "detections_count": 0,
+    "detections": [],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "images (14).jpg",
+    "status": 200,
+    "response_time_ms": 138.97132873535156,
+    "detections_count": 0,
+    "detections": [],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "images (10).jpg",
+    "status": 200,
+    "response_time_ms": 96.82464599609375,
+    "detections_count": 0,
+    "detections": [],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "25b51deeb7f56ee9dc6d3e219c2cddd6.jpg",
+    "status": 200,
+    "response_time_ms": 60.509443283081055,
+    "detections_count": 1,
+    "detections": [
+      {
+        "bbox": {
+          "x_min": 82,
+          "y_min": 252,
+          "x_max": 229,
+          "y_max": 393
+        }
+      }
+    ],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "ff35433c2554e9a61c3e9163f4769f14.jpg",
+    "status": 200,
+    "response_time_ms": 44.59691047668457,
+    "detections_count": 1,
+    "detections": [
+      {
+        "bbox": {
+          "x_min": 47,
+          "y_min": 37,
+          "x_max": 100,
+          "y_max": 90
+        }
+      }
+    ],
+    "success": true,
+    "content_type": "image/jpeg"
+  },
+  {
+    "image": "images (2).jpg",
+    "status": 200,
+    "response_time_ms": 85.39605140686035,
     "detections_count": 0,
     "detections": [],
     "success": true,

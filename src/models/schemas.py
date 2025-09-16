@@ -1,6 +1,5 @@
 from pydantic import BaseModel, Field
 from typing import List, Optional
-from fastapi import FastAPI, File, UploadFile
 
 class BoundingBox(BaseModel):
     """Абсолютные координаты BoundingBox"""
