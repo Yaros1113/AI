@@ -3,7 +3,7 @@ setlocal enabledelayedexpansion
 
 REM Настройки
 set IMAGE_NAME=t-bank-logo
-set PORT=8000
+set PORT=8080
 
 echo.
 echo ==============================================================

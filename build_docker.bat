@@ -5,7 +5,7 @@ REM Настройки
 set IMAGE_NAME=t-bank-logo
 set DOCKER_BUILDKIT=1
 
-REM Цвета для красивого вывода
+REM Цвета для красивого вывода (на будущее)
 for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do (
   set "DEL=%%a"
 )

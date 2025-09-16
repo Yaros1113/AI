@@ -23,14 +23,11 @@ class App(tk.Tk):
         self.btn_visualize = tk.Button(btn_frame, text="Визуализация BB", width=20, command=self.visualize_positive)
         self.btn_visualize.grid(row=0, column=2, padx=5)
 
-        self.btn_training = tk.Button(btn_frame, text="Обучение модели", width=20, command=self.run_training)
-        self.btn_training.grid(row=0, column=3, padx=5)
-
         self.btn_ml_service = tk.Button(btn_frame, text="Запуск ML-сервиса", width=20, command=self.run_ml_service)
-        self.btn_ml_service.grid(row=0, column=4, padx=5)
+        self.btn_ml_service.grid(row=0, column=3, padx=5)
 
-        self.btn_validation = tk.Button(btn_frame, text="Валидация модели", width=20, command=self.run_validation)
-        self.btn_validation.grid(row=0, column=5, padx=5)
+        self.btn_validation = tk.Button(btn_frame, text="Тестирование API", width=20, command=self.run_api_test)
+        self.btn_validation.grid(row=0, column=4, padx=5)
 
         # Текстовое поле для логов
         self.log_area = scrolledtext.ScrolledText(self, height=25, state='disabled')
@@ -55,7 +52,7 @@ class App(tk.Tk):
                 stdout=subprocess.PIPE,
                 stderr=subprocess.STDOUT,
                 universal_newlines=True,
-                encoding='cp866',
+                encoding='utf-8',
                 shell=True
             )
             for line in process.stdout:
@@ -83,17 +80,13 @@ class App(tk.Tk):
         # Запуск скрипта визуализации разметки позитивных вариантов
         self.run_in_thread(lambda: self.run_command("python scripts/visualize_positive.py", "Визуализация BB"))
 
-    def run_training(self):
-        # Запуск обучения модели
-        self.run_in_thread(lambda: self.run_command("python scripts/train.py", "Обучение модели"))
-
     def run_ml_service(self):
         # Запуск FastAPI сервиса через докер
         self.run_in_thread(lambda: self.run_command("run_docker.bat", "ML-сервис"))
 
-    def run_validation(self):
+    def run_api_test(self):
         # Запуск скрипта валидации
-        self.run_in_thread(lambda: self.run_command("python src/scripts/validate.py", "Валидация модели"))
+        self.run_in_thread(lambda: self.run_command("python tests/load_test.py", "Тестирование API"))
 
 if __name__ == "__main__":
     app = App()

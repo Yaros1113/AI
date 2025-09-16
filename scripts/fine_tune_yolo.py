@@ -62,16 +62,16 @@ def fine_tune_yolo():
     model_save_dir = 'data/models'
 
     # 1. Подготовка структуры датасета
-    #prepare_dataset_structure(raw_data_dir, prepared_data_dir)
+    prepare_dataset_structure(raw_data_dir, prepared_data_dir)
 
     # 2. Загружаем предобученную модель YOLO
     # Рекомендуется использовать 'yolo11m.pt' как баланс скорости и точности
     model = YOLO('data/models/yolo11m_tbank_finetuned6/weights/best.pt')
 
     # 3. Запускаем обучение (fine-tuning)
-    '''results = model.train(
+    results = model.train(
         data=dataset_config_path,   # Путь к YAML-конфигу
-        epochs=100,                 # Количество эпох
+        epochs=50,                  # Количество эпох
         imgsz=640,                  # Размер изображения
         batch=16,                   # Размер батча (зависит от памяти GPU)
         patience=15,                # Ранняя остановка, если нет улучшений
@@ -85,12 +85,14 @@ def fine_tune_yolo():
         # freeze=10,                 # Заморозить первые 10 слоев (опционально, для экономии памяти и ускорения, если датасет маленький)
         device='0',                 # Использовать GPU с ID 0
         verbose=True                # Выводить подробный прогресс
-    )'''
+    )
 
     # 4. Оцениваем модель на валидационном наборе
     #best_model_path = results.best
-    best_model = YOLO("data/models/yolo11m_tbank_finetuned/weights/best.pt")#best_model_path)
-    metrics = best_model.val(device='0')  # Этот метод вернет объект с метриками
+    best_model = YOLO("data/models/yolo11m_tbank_best.pt")#best_model_path)
+    metrics = best_model.val(
+        device='0',
+    )  # Этот метод вернет объект с метриками
 
     # Печатаем метрики через встроенные атрибуты
     print("\n=== Validation Results ===")
@@ -105,7 +107,7 @@ def fine_tune_yolo():
     print(f"Raw Recall list (per class): {metrics.box.r}")
 
     # 5. Экспорт модели
-    model.export(format='onnx', device='0')   # Для ускорения инференса
+    #model.export(format='onnx', device='0')   # Для ускорения инференса
 
 if __name__ == "__main__":
     fine_tune_yolo()

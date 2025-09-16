@@ -189,3 +189,4 @@ data/input/positive
 /data/models/yolo11m_tbank_finetuned
 /data/models/yolo11m_tbank_finetuned6
 data/models/yolo11m_tbank_best.pt
+/data/input/test

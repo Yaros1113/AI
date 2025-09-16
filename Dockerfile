@@ -28,15 +28,19 @@ COPY . .
 # Создаем необходимые директории
 RUN mkdir -p data/models data/input data/output
 
+# Копируем модель
+COPY data/models/yolo11m_tbank_best.pt /app/data/models/
+
 # Устанавливаем переменные окружения
 ENV PYTHONPATH=/app/src
-ENV MODEL_PATH=/app/data/models/yolov8n_tbank.pt
-ENV PORT=8000
+ENV MODEL_PATH=/app/data/models/yolo11m_tbank_best.pt
+ENV PORT=8080
 ENV HOST=0.0.0.0
 ENV DEVICE=cuda
+ENV MODEL_CONFIDENCE_THRESHOLD=0.5
 
 # Открываем порт
-EXPOSE 8000
+EXPOSE 8080
 
-# Запускаем приложение
-CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+# Запускаем приложение (без --reload для production)
+CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8080"]

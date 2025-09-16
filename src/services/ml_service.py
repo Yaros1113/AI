@@ -1,22 +1,32 @@
 from ultralytics import YOLO
-import numpy as np
 import logging
-from PIL import Image
-from io import BytesIO
+from pydantic_settings import BaseSettings
+from src.services.image_service import process_image
 
 logger = logging.getLogger(__name__)
 
+class ModelConfig(BaseSettings):
+    """Конфигурация модели"""
+    model_path: str = '/app/data/models/yolo11m_tbank_best.pt'
+    device: str = 'cuda'
+    confidence_threshold: float = 0.5
+
+    class Config:
+        env_file = ".env"
+        env_prefix = "MODEL_"
+
 class MLService:
-    def __init__(self, model_path: str, device: str = 'cuda'):
+    def __init__(self, config: ModelConfig):
         """
         Загружает обученную модель YOLO для детекции логотипов.
         Args:
-            model_path (str): Путь к файлу .pt обученной модели (например, 'best.pt')
-            device (str): Устройство для вычислений ('cuda' или 'cpu')
+            config (ModelConfig): Конфигурация модели
         """
-        self.model = YOLO(model_path)
-        self.model.to(device)
-        logger.info(f"Model loaded from {model_path} on device {device}")
+        self.config = config
+        self.model = YOLO(config.model_path)
+        self.model.to(config.device)
+        logger.info(f"Model loaded from {config.model_path} on device {config.device}")
+        logger.info(f"Confidence threshold: {config.confidence_threshold}")
 
     async def predict(self, image_bytes: bytes) -> list:
         """
@@ -26,29 +36,33 @@ class MLService:
         Returns:
             list: Список словарей с координатами и уверенностью для каждого обнаруженного логотипа.
         """
-        # Конвертируем bytes в PIL Image -> numpy array
-        image = Image.open(BytesIO(image_bytes)).convert('RGB')
-        image_np = np.array(image)
+        try:
+            # Конвертируем bytes в PIL Image -> numpy array
+            pil_image = await process_image(image_bytes)
 
-        # Инференс! Указываем conf=0.25 для отсечения слабых срабатываний:cite[8]
-        results = self.model(image_np, conf=0.25, verbose=False)
+            # Инференс с порогом из конфига
+            results = self.model(pil_image, conf=self.config.confidence_threshold, verbose=False)
 
-        # Пост-обработка результатов
-        detections = []
-        for result in results:
-            if result.boxes is not None:
-                for box in result.boxes:
-                    # Извлекаем координаты, уверенность и класс
-                    x_min, y_min, x_max, y_max = box.xyxy[0].cpu().numpy().astype(int)
-                    confidence = box.conf[0].cpu().numpy().item()
-                    # class_id = int(box.cls[0].cpu().numpy()) # Если классов несколько
+            # Пост-обработка результатов
+            detections = []
+            for result in results:
+                if result.boxes is not None:
+                    for box in result.boxes:
+                        # Извлекаем координаты, уверенность и класс
+                        x_min, y_min, x_max, y_max = box.xyxy[0].cpu().numpy().astype(int)
+                        confidence = box.conf[0].cpu().numpy().item()
+                        # class_id = int(box.cls[0].cpu().numpy()) # Если классов несколько
 
-                    # Для вашей задачи class_id всегда должен быть 0 (tbank_logo)
-                    detections.append({
-                        "x_min": x_min,
-                        "y_min": y_min,
-                        "x_max": x_max,
-                        "y_max": y_max,
-                        "confidence": confidence
-                    })
-        return detections
+                        # Для вашей задачи class_id всегда должен быть 0 (tbank_logo)
+                        detections.append({
+                            "x_min": x_min,
+                            "y_min": y_min,
+                            "x_max": x_max,
+                            "y_max": y_max,
+                            "confidence": confidence
+                        })
+            return detections
+            
+        except Exception as e:
+            logger.error(f"Error during prediction: {str(e)}")
+            raise

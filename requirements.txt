@@ -1,18 +1,31 @@
-# Core
+# Core API
 fastapi==0.115.6
-pydantic==2.10.1
 uvicorn==0.31.1
+python-multipart==0.0.9
+
+# Pydantic & Configuration
+pydantic==2.10.1
+pydantic-settings==2.10.1
+
+# ML & Computer Vision
 ultralytics==8.3.28
 transformers==4.46.2
 opencv-python==4.10.0.84
 pillow==11.0.0
+numpy==2.1.1
+
+# HTTP Clients
 requests==2.32.3
-# Validation & Testing
-pytest==8.3.3
-scikit-learn==1.7
+aiohttp==3.12.15
+
+# Validation & Visualization
 torcheval==0.0.7
 matplotlib==3.9.2
-numpy==2.1.1
-# Logging & Monitoring
-loguru==0.7.2
-prometheus-fastapi-instrumentator==2.0.1
+tqdm==4.67.1
+
+# Logging
+#loguru==0.7.2
+
+# Testing (optional)
+pytest==8.3.3
+pytest-asyncio==0.24.0
